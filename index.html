@@ -19,117 +19,130 @@
 
 		<div class="p-5">
 			<h5>Interface usager du Journal de Montréal</h5>
-			<img src="images/JournalDeMontreal.jpg" alt="https://www.journaldemontreal.com/" class="img-fluid">
+			<a href="https://www.journaldemontreal.com/"><img src="images/JournalDeMontreal.jpg"  alt="https://www.journaldemontreal.com/" class="img-fluid"></a>
 		</div>
-		
-		<div class="card">
-			<div class="card-header">Questionnaire en ligne</div>
-			<div class="card-body">
-			<!-- Form -->
-				<form name="my survey" method="POST">
-					<!-- Favorite Color field-->
-					<div class="form-group">
-						<label for="favoriteColor">Quelle est votre couleur préférée de l'interface usager?</label>
-						<input type="text" class="form-control" id="favoriteColor" placeholder="Veuillez entrer couleur préférée">
-					</div>
+		<form name="my survey" method="POST">
+			<div class="card">
+				<div class="card-header">Questionnaire en ligne</div>
+				<div class="card-body">
+				<!-- Form -->
+						<h5>Identification</h5>
+						<div class="form-group">
+							<label for="firstName">Prénom</label>
+							<input type="text" class="form-control" id="firstName" placeholder="Prénom">
+						</div>
 
-					<!-- Sex Field-->
-					<div class="form-group">
-						<label for="headlines">Aimez-vous la disposition des manchettes?</label>
-						<div class="form-check">
-							<input type="radio" name="headlines" id="yes" value="yes">
-							<label class="form-check-label" for="yes">
-							Oui
-							</label>
+						<div class="form-group">
+							<label for="lastName">Nom de famille</label>
+							<input type="text" class="form-control" id="lastName" placeholder="Nom de famille">
 						</div>
-						<div class="form-check">
-							<input type="radio" name="headlines" id="no" value="no">
-							<label class="form-check-label" for="no">
-							Non
-							</label>
-						</div>
-						<div class="form-check">
-							<input type="radio" name="headlines" id="indifferent" value="indifferent">
-							<label class="form-check-label" for="indifferent">
-							Indiférrent
-							</label>
-						</div>
-					</div>
 
-					<!-- Birth month Field-->
-					<div class="form-group">
-						<label for="category">Quelle catégorie vous semble la plus intéressante?</label>
-						<select class="form-control" id="category">
-							<option>Actualité</option>
-							<option>COVID-19</option>
-							<option>Enquêtes</option>
-							<option>Sports</option>
-							<option>Weekend</option>
-							<option>Spectacles</option>
-							<option>Argent</option>
-							<option>Guide de l'auto</option>
-							<option>Monde</option>
-							<option>JM</option>
-							<option>Porte-Monnaie</option>
-							<option>Maison Extra</option>
-							<option>En 5 minutes</option>
-							<option>Évasion</option>
-							<option>Opinions</option>
-							<option>Zeste</option>
-							<option>Hublo</option>
-						</select>
-					</div>
+						<h5>Questions</h5>
+						<!-- Favorite Color field-->
+						<div class="form-group">
+							<label for="favoriteColor">Quelle est votre couleur préférée de l'interface usager?</label>
+							<input type="text" class="form-control" id="favoriteColor" placeholder="Veuillez entrer couleur préférée">
+						</div>
 
-					<div class="form-group">
-						<label for="favoriteColor">Quelles manchettes vous semblent les plus intéressantes?</label>
-						<div class="form-check">
-							<input type="checkbox" name="headline" id="vaccination" value="vaccination">
-							<label class="form-check-label" for="vaccination">
-								"Vaccination: Le Québec est tout prêt du but"
-							</label>
+						<!-- Sex Field-->
+						<div class="form-group">
+							<label for="headlines">Aimez-vous la disposition des manchettes?</label>
+							<div class="form-check">
+								<input type="radio" name="headlines" id="yes" value="yes">
+								<label class="form-check-label" for="yes">
+								Oui
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" name="headlines" id="no" value="no">
+								<label class="form-check-label" for="no">
+								Non
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" name="headlines" id="indifferent" value="indifferent">
+								<label class="form-check-label" for="indifferent">
+								Indiférrent
+								</label>
+							</div>
 						</div>
-						<div class="form-check">
-							<input type="checkbox" name="headline" id="manonMasse" value="manonMasse">
-							<label class="form-check-label" for="manonMasse">
-								"Manon Massé cède sa place de leader en Chambre"
-							</label>
-						</div>
-						<div class="form-check">
-							<input type="checkbox" name="headline" id="tension" value="tension">
-							<label class="form-check-label" for="tension">
-								"La tension monte jusqu'ici"
-							</label>
-						</div>
-						<div class="form-check">
-							<input type="checkbox" name="headline" id="deconfinement" value="deconfinement">
-							<label class="form-check-label" for="deconfinement">
-								"Le plan du déconfinement présenté mardi"
-							</label>
-						</div>
-						<div class="form-check">
-							<input type="checkbox" name="headline" id="stats" value="stats">
-							<label class="form-check-label" for="stats">
-								Statistiques de la COVID au Québec
-							</label>
-						</div>
-						<div class="form-check">
-							<input type="checkbox" name="headline" id="lightning" value="lightning">
-							<label class="form-check-label" for="lightning">
-								"La première manche va au Lightning"
-							</label>
-						</div>
-					</div>
 
-					<!-- Comment Field-->
-					<div class="form-group">
-						<label for="exampleFormControlTextarea1">Commentaires</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tous commentaires sont les bienvenus!"></textarea>
-					</div>
+						<!-- Birth month Field-->
+						<div class="form-group">
+							<label for="category">Quelle catégorie vous semble la plus intéressante?</label>
+							<select class="form-control" id="category">
+								<option>Actualité</option>
+								<option>COVID-19</option>
+								<option>Enquêtes</option>
+								<option>Sports</option>
+								<option>Weekend</option>
+								<option>Spectacles</option>
+								<option>Argent</option>
+								<option>Guide de l'auto</option>
+								<option>Monde</option>
+								<option>JM</option>
+								<option>Porte-Monnaie</option>
+								<option>Maison Extra</option>
+								<option>En 5 minutes</option>
+								<option>Évasion</option>
+								<option>Opinions</option>
+								<option>Zeste</option>
+								<option>Hublo</option>
+							</select>
+						</div>
 
-					<button type="submit" class="btn btn-primary">Soumettre</button>
-				</form>
+						<div class="form-group">
+							<label for="favoriteColor">Quelles manchettes vous semblent les plus intéressantes?</label>
+							<div class="form-check">
+								<input type="checkbox" name="headline" id="vaccination" value="vaccination">
+								<label class="form-check-label" for="vaccination">
+									"Vaccination: Le Québec est tout prêt du but"
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" name="headline" id="manonMasse" value="manonMasse">
+								<label class="form-check-label" for="manonMasse">
+									"Manon Massé cède sa place de leader en Chambre"
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" name="headline" id="tension" value="tension">
+								<label class="form-check-label" for="tension">
+									"La tension monte jusqu'ici"
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" name="headline" id="deconfinement" value="deconfinement">
+								<label class="form-check-label" for="deconfinement">
+									"Le plan du déconfinement présenté mardi"
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" name="headline" id="stats" value="stats">
+								<label class="form-check-label" for="stats">
+									Statistiques de la COVID au Québec
+								</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" name="headline" id="lightning" value="lightning">
+								<label class="form-check-label" for="lightning">
+									"La première manche va au Lightning"
+								</label>
+							</div>
+						</div>
+
+						<!-- Comment Field-->
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Commentaires</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tous commentaires sont les bienvenus!"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Soumettre</button>
+				</div>
+				<div class="card-footer text-muted">
+					Merci d'avoir complété le questionnaire!
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 	<footer class="footer">
 		<div class="container">
